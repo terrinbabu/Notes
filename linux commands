@@ -1,0 +1,87 @@
+1. Files, Folders and disks
+
+    $ ls -al                                            // list of normal and hidden files and folders
+    $ cp -a /source/. /dest/                            // copy folders
+    $ df -h --total                                     // List of disks and sizes info
+    $ mv .../.../folder_name .../.../folder_new_name    // rename a file/folder
+    $ rm -r mydir                                       // remove folder
+    
+    find a file name
+
+	$ find . -name testfile.txt						 // find file name testfile.txt in the current folder and its sub-folders
+	$ find /home -name *.jpg						 // find file name ends with .jpg in folder /home
+	$ find . -type f -empty							 // find empty file in the current folder
+	$ find /home -mtime 7 -iname ".db"  			 // find all .db file modified in last 7 days 
+
+    compress
+
+	$ tar -czvf name-of-archive.tar.gz /path/to/directory-or-file      // to compress
+	$ tar -xzvf archive.tar.gz                                         // to extract
+	
+2. Networks
+
+    $ hostname -I                    // displays the IP address
+    $ ifconfig                       // all network interface
+    $ ifconfig eth0                  // ethernet interface
+    $ ip route | grep default        // default gateway IP 
+    $  nmcli dev show | grep DNS     // DNS server info
+
+	 create static IP 
+    
+    $ sudo vim /etc/network/interfaces  
+    
+    // add these lines - check for netmask,broadcast,gateway,dns-nameservers
+    
+		auto eth0
+		iface eth0 inet static
+		    address 192.168.1.1
+		    netmask 255.255.0.0
+		    broadcast 10.2.255.255
+		    gateway 10.2.1.254
+		    dns-nameservers 10.2.1.254
+		    dns-search lan
+
+	$ /etc/init.d/networking restart
+
+3. search a word
+	
+	$ grep failure /var/log/secure    						// search word failure in file /var/log/secure
+	$ grep -i .... 												// case insensitive search
+	$ grep 'opened\|closed' /var/log/secure 				// search word opened and closed 
+	$ grep grep failure /var/log/secure -c					// returns the count of the word
+	$ grep -n failure /var/log/secure						// with line number
+	$ grep -m5 failure /var/log/secure						// first 5 search results
+	$ grep -v failure /var/log/secure						// search line with word failure is NOT there
+	
+	$ grep -r "smatteso" /etc									// entire folder and sub folders (recursive search)
+	$ grep -rl "smatteso" /etc									// only file names
+	$ grep -rL "smatteso" /etc									// file names without the word
+	
+	$ find . -name "*.log" | grep -i spice					// using grep with other command	
+
+
+	
+4. run AppImage file
+
+	$ chmod u+x <AppImage File>.AppImage 					// make it executable file
+	$ ./<AppImage File>.AppImage 								// run the file
+	
+5. Bitbucket
+	
+	web username : iras@itia.cnr.it
+	password 	 : brontolo
+	
+	$ git clone https://bitbucket.org/iras-ind/...     // to download 
+	$ Username for 'https://bitbucket.org': CNR-ITIA
+	$ Password for 'https://CNR-ITIA@bitbucket.org': brontolo
+
+6. 	format USB
+
+    $ sudo apt-get install gparted
+    $ sudo gparted
+
+    Wait for sometime
+
+    1. In the top corner select the USB (look at the GB size)
+    2. select the USB, right click, unmount
+    3. right click, format to, fat32, press the green tick

@@ -1,0 +1,148 @@
+1.  $ sudo apt install ros-melodic-desktop-full
+
+    The following NEW packages will be installed:
+    binfmt-support blt bzip2-doc cmake cmake-data curl cython default-libmysqlclient-dev dh-python docutils-common docutils-doc fltk1.3-doc fluid
+    fonts-lato fonts-lyx freeglut3 freeglut3-dev gazebo9 gazebo9-common gazebo9-plugin-base gdal-data gir1.2-gtk-2.0 google-mock googletest
+    graphviz hddtemp hdf5-helpers ibverbs-providers libaec-dev libaec0 libann0 libapr1-dev libaprutil1-dev libarmadillo-dev libarmadillo8
+    libarpack2 libarpack2-dev libassimp-dev libassimp4 libassuan-dev libavcodec-dev libavdevice-dev libavdevice57 libavfilter-dev libavformat-dev
+    libavresample-dev libavutil-dev libblas-dev libblas3 libboost-all-dev libboost-atomic-dev libboost-atomic1.65-dev libboost-atomic1.65.1
+    libboost-chrono-dev libboost-chrono1.65-dev libboost-chrono1.65.1 libboost-container-dev libboost-container1.65-dev libboost-container1.65.1
+    libboost-context-dev libboost-context1.65-dev libboost-context1.65.1 libboost-coroutine-dev libboost-coroutine1.65-dev
+    libboost-coroutine1.65.1 libboost-date-time-dev libboost-date-time1.65-dev libboost-dev libboost-exception-dev libboost-exception1.65-dev
+    libboost-fiber-dev libboost-fiber1.65-dev libboost-fiber1.65.1 libboost-filesystem-dev libboost-filesystem1.65-dev libboost-graph-dev
+    libboost-graph-parallel-dev libboost-graph-parallel1.65-dev libboost-graph-parallel1.65.1 libboost-graph1.65-dev libboost-graph1.65.1
+    libboost-iostreams-dev libboost-iostreams1.65-dev libboost-locale-dev libboost-locale1.65-dev libboost-log-dev libboost-log1.65-dev
+    libboost-log1.65.1 libboost-math-dev libboost-math1.65-dev libboost-math1.65.1 libboost-mpi-dev libboost-mpi-python-dev
+    libboost-mpi-python1.65-dev libboost-mpi-python1.65.1 libboost-mpi1.65-dev libboost-mpi1.65.1 libboost-numpy-dev libboost-numpy1.65-dev
+    libboost-numpy1.65.1 libboost-program-options-dev libboost-program-options1.65-dev libboost-program-options1.65.1 libboost-python-dev
+    libboost-python1.65-dev libboost-python1.65.1 libboost-random-dev libboost-random1.65-dev libboost-random1.65.1 libboost-regex-dev
+    libboost-regex1.65-dev libboost-regex1.65.1 libboost-serialization-dev libboost-serialization1.65-dev libboost-serialization1.65.1
+    libboost-signals-dev libboost-signals1.65-dev libboost-signals1.65.1 libboost-stacktrace-dev libboost-stacktrace1.65-dev
+    libboost-stacktrace1.65.1 libboost-system-dev libboost-system1.65-dev libboost-test-dev libboost-test1.65-dev libboost-test1.65.1
+    libboost-thread-dev libboost-thread1.65-dev libboost-timer-dev libboost-timer1.65-dev libboost-timer1.65.1 libboost-tools-dev
+    libboost-type-erasure-dev libboost-type-erasure1.65-dev libboost-type-erasure1.65.1 libboost-wave-dev libboost-wave1.65-dev
+    libboost-wave1.65.1 libboost1.65-dev libboost1.65-tools-dev libbullet-dev libbullet2.87 libbz2-dev libccd-dev libccd2 libcdt5 libcgraph6
+    libcharls1 libconsole-bridge-dev libconsole-bridge0.4 libcurl4-openssl-dev libdap-dev libdap25 libdapclient6v5 libdapserver7v5
+    libdc1394-22-dev libeigen3-dev libepsilon-dev libepsilon1 libexif-dev libexif-doc libfabric1 libflann-dev libflann1.9 libfltk-cairo1.3
+    libfltk-forms1.3 libfltk-gl1.3 libfltk-images1.3 libfltk1.3 libfltk1.3-dev libfreeimage-dev libfreeimage3 libfreexl-dev libfreexl1 libfyba-dev
+    libfyba0 libgazebo9 libgazebo9-dev libgdal-dev libgdal20 libgdcm2-dev libgdcm2.8 libgeos-3.6.2 libgeos-c1v5 libgeos-dev libgeotiff-dev
+    libgeotiff2 libgfortran4 libgif-dev libgl2ps-dev libgl2ps1.4 libgpg-error-dev libgpgme-dev libgphoto2-dev libgraphviz-dev libgtest-dev
+    libgtk2.0-dev libgts-0.7-5 libgts-bin libgts-dev libgvc6 libgvc6-plugins-gtk libgvpr2 libhdf4-0-alt libhdf4-alt-dev libhdf5-100
+    libhdf5-cpp-100 libhdf5-dev libhdf5-mpi-dev libhdf5-openmpi-100 libhdf5-openmpi-dev libhwloc-dev libhwloc-plugins libhwloc5 libibverbs-dev
+    libibverbs1 libignition-cmake-dev libignition-common libignition-common-dev libignition-fuel-tools1-1 libignition-fuel-tools1-dev
+    libignition-math4 libignition-math4-dev libignition-msgs libignition-msgs-dev libignition-transport4 libignition-transport4-dev libilmbase-dev
+    libjbig-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev libjs-jquery-ui libjs-sphinxdoc libjson-c-dev libjsoncpp-dev libjsoncpp1 libjxr0
+    libkml-dev libkmlbase1 libkmlconvenience1 libkmldom1 libkmlengine1 libkmlregionator1 libkmlxsd1 liblab-gamut1 liblapack-dev liblapack3
+    libldap2-dev liblept5 liblog4cxx-dev liblog4cxx10v5 liblz4-dev liblzma-dev libminizip-dev libmysqlclient-dev libmysqlclient20 libnetcdf-c++4
+    libnetcdf-cxx-legacy-dev libnetcdf-dev libnetcdf13 libnl-route-3-200 libnuma-dev libodbc1 libogdi3.2 libogdi3.2-dev libogg-dev libogre-1.9-dev
+    libogre-1.9.0v5 libopenal-data libopenal-dev libopenal1 libopencv-calib3d-dev libopencv-calib3d3.2 libopencv-contrib-dev libopencv-contrib3.2
+    libopencv-core-dev libopencv-core3.2 libopencv-dev libopencv-features2d-dev libopencv-features2d3.2 libopencv-flann-dev libopencv-flann3.2
+    libopencv-highgui-dev libopencv-highgui3.2 libopencv-imgcodecs-dev libopencv-imgcodecs3.2 libopencv-imgproc-dev libopencv-imgproc3.2
+    libopencv-ml-dev libopencv-ml3.2 libopencv-objdetect-dev libopencv-objdetect3.2 libopencv-photo-dev libopencv-photo3.2 libopencv-shape-dev
+    libopencv-shape3.2 libopencv-stitching-dev libopencv-stitching3.2 libopencv-superres-dev libopencv-superres3.2 libopencv-ts-dev
+    libopencv-video-dev libopencv-video3.2 libopencv-videoio-dev libopencv-videoio3.2 libopencv-videostab-dev libopencv-videostab3.2
+    libopencv-viz-dev libopencv-viz3.2 libopencv3.2-java libopencv3.2-jni libopenexr-dev libopenjp2-7-dev libopenmpi-dev libopenmpi2 libopenni-dev
+    libopenni-sensor-pointclouds0 libopenni0 libopenni2-0 libopenni2-dev libpathplan4 libpcl-apps1.8 libpcl-common1.8 libpcl-dev
+    libpcl-features1.8 libpcl-filters1.8 libpcl-io1.8 libpcl-kdtree1.8 libpcl-keypoints1.8 libpcl-ml1.8 libpcl-octree1.8 libpcl-outofcore1.8
+    libpcl-people1.8 libpcl-recognition1.8 libpcl-registration1.8 libpcl-sample-consensus1.8 libpcl-search1.8 libpcl-segmentation1.8
+    libpcl-stereo1.8 libpcl-surface1.8 libpcl-tracking1.8 libpcl-visualization1.8 libpoco-dev libpococrypto50 libpocodata50 libpocodatamysql50
+    libpocodataodbc50 libpocodatasqlite50 libpocofoundation50 libpocojson50 libpocomongodb50 libpoconet50 libpoconetssl50 libpocoredis50
+    libpocoutil50 libpocoxml50 libpocozip50 libpoppler-dev libpoppler-private-dev libpostproc-dev libpq-dev libpq5 libproj-dev libproj12
+    libprotobuf-dev libprotoc-dev libprotoc10 libpsm-infinipath1 libpython-dev libpython2.7-dev libpython3-dev libpython3.6-dev libqhull-dev
+    libqhull-r7 libqhull7 libqt5designer5 libqt5designercomponents5 libqt5quickparticles5 libqt5quicktest5 libqt5webkit5-dev libqtpropertybrowser4
+    libqwt-headers libqwt-qt5-6 libqwt-qt5-dev libraw1394-dev libraw1394-tools librdmacm1 librhash0 libruby2.5 libsctp-dev libsctp1 libsdformat6
+    libsdformat6-dev libsdl2-2.0-0 libsimbody-dev libsimbody3.5v5 libsocket++1 libspatialite-dev libspatialite7 libspnav0 libsqlite3-dev
+    libssl-dev libssl-doc libsuperlu-dev libsuperlu5 libswresample-dev libswscale-dev libsz2 libtar-dev libtar0 libtbb-dev libtbb2 libtcl8.6
+    libtesseract4 libtheora-dev libtiff-dev libtiff5-dev libtiffxx5 libtinyxml-dev libtinyxml2-6 libtinyxml2-dev libtinyxml2.6.2v5 libtk8.6
+    liburdfdom-dev liburdfdom-headers-dev liburdfdom-model liburdfdom-model-state liburdfdom-sensor liburdfdom-world liburiparser-dev
+    liburiparser1 libusb-1.0-0-dev libusb-1.0-doc libvtk6-dev libvtk6-java libvtk6-jni libvtk6-qt-dev libvtk6.3 libvtk6.3-qt libwebp-dev
+    libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxdot4 libxerces-c-dev libxerces-c3.2 libxml2-dev libxml2-utils libxmu-dev libxmu-headers libxss-dev
+    libxt-dev libyaml-cpp-dev libyaml-cpp0.5v5 libyaml-dev libzip-dev libzip4 libzmq3-dev libzzip-0-13 mpi-default-bin mpi-default-dev
+    mysql-common ocl-icd-libopencl1 odbcinst odbcinst1debian2 opencv-data openmpi-bin openmpi-common openni-utils proj-bin proj-data
+    protobuf-compiler pyqt5-dev python-asn1crypto python-attr python-autobahn python-automat python-backports.functools-lru-cache python-bs4
+    python-catkin-pkg python-catkin-pkg-modules python-cbor python-cffi-backend python-chardet python-click python-colorama
+    python-concurrent.futures python-constantly python-crypto python-cryptography python-cycler python-dateutil python-defusedxml python-dev
+    python-docutils python-empy python-enum34 python-gnupg python-html5lib python-hyperlink python-idna python-incremental python-ipaddress
+    python-lxml python-lz4 python-matplotlib python-matplotlib-data python-mpi4py python-nacl python-netifaces python-nose python-numpy
+    python-olefile python-opencv python-opengl python-openssl python-pam python-paramiko python-pil python-pkg-resources python-pyasn1
+    python-pyasn1-modules python-pydot python-pygments python-pyparsing python-pyqt5 python-pyqt5.qtopengl python-pyqt5.qtsvg
+    python-pyqt5.qtwebkit python-qrcode python-roman python-rosdep python-rosdistro python-rosdistro-modules python-rospkg python-rospkg-modules
+    python-serial python-service-identity python-setuptools python-sip python-sip-dev python-six python-snappy python-subprocess32 python-tk
+    python-trie python-trollius python-twisted python-twisted-bin python-twisted-core python-txaio python-tz python-u-msgpack python-ubjson
+    python-vtk6 python-webencodings python-wsaccel python-wxgtk3.0 python-wxtools python-wxversion python-yaml python-zope.interface python2.7-dev
+    python3-dev python3.6-dev qt5-assistant qt5-qmltooling-plugins qtdeclarative5-dev qttools5-dev qttools5-dev-tools qttools5-private-dev rake
+    ros-melodic-actionlib ros-melodic-actionlib-msgs ros-melodic-actionlib-tutorials ros-melodic-angles ros-melodic-bond ros-melodic-bond-core
+    ros-melodic-bondcpp ros-melodic-bondpy ros-melodic-camera-calibration ros-melodic-camera-calibration-parsers ros-melodic-camera-info-manager
+    ros-melodic-catkin ros-melodic-class-loader ros-melodic-cmake-modules ros-melodic-common-msgs ros-melodic-common-tutorials
+    ros-melodic-compressed-depth-image-transport ros-melodic-compressed-image-transport ros-melodic-control-msgs ros-melodic-control-toolbox
+    ros-melodic-controller-interface ros-melodic-controller-manager ros-melodic-controller-manager-msgs ros-melodic-cpp-common
+    ros-melodic-cv-bridge ros-melodic-depth-image-proc ros-melodic-desktop ros-melodic-desktop-full ros-melodic-diagnostic-aggregator
+    ros-melodic-diagnostic-analysis ros-melodic-diagnostic-common-diagnostics ros-melodic-diagnostic-msgs ros-melodic-diagnostic-updater
+    ros-melodic-diagnostics ros-melodic-diff-drive-controller ros-melodic-dynamic-reconfigure ros-melodic-eigen-conversions
+    ros-melodic-executive-smach ros-melodic-filters ros-melodic-forward-command-controller ros-melodic-gazebo-dev ros-melodic-gazebo-msgs
+    ros-melodic-gazebo-plugins ros-melodic-gazebo-ros ros-melodic-gazebo-ros-control ros-melodic-gazebo-ros-pkgs ros-melodic-gencpp
+    ros-melodic-geneus ros-melodic-genlisp ros-melodic-genmsg ros-melodic-gennodejs ros-melodic-genpy ros-melodic-geometry
+    ros-melodic-geometry-msgs ros-melodic-geometry-tutorials ros-melodic-gl-dependency ros-melodic-hardware-interface ros-melodic-image-common
+    ros-melodic-image-geometry ros-melodic-image-pipeline ros-melodic-image-proc ros-melodic-image-publisher ros-melodic-image-rotate
+    ros-melodic-image-transport ros-melodic-image-transport-plugins ros-melodic-image-view ros-melodic-interactive-marker-tutorials
+    ros-melodic-interactive-markers ros-melodic-joint-limits-interface ros-melodic-joint-state-controller ros-melodic-joint-state-publisher
+    ros-melodic-kdl-conversions ros-melodic-kdl-parser ros-melodic-kdl-parser-py ros-melodic-laser-assembler ros-melodic-laser-filters
+    ros-melodic-laser-geometry ros-melodic-laser-pipeline ros-melodic-librviz-tutorial ros-melodic-map-msgs ros-melodic-media-export
+    ros-melodic-message-filters ros-melodic-message-generation ros-melodic-message-runtime ros-melodic-mk ros-melodic-nav-msgs ros-melodic-nodelet
+    ros-melodic-nodelet-core ros-melodic-nodelet-topic-tools ros-melodic-nodelet-tutorial-math ros-melodic-orocos-kdl ros-melodic-pcl-conversions
+    ros-melodic-pcl-msgs ros-melodic-pcl-ros ros-melodic-perception ros-melodic-perception-pcl ros-melodic-pluginlib
+    ros-melodic-pluginlib-tutorials ros-melodic-polled-camera ros-melodic-position-controllers ros-melodic-python-orocos-kdl
+    ros-melodic-python-qt-binding ros-melodic-qt-dotgraph ros-melodic-qt-gui ros-melodic-qt-gui-cpp ros-melodic-qt-gui-py-common
+    ros-melodic-qwt-dependency ros-melodic-realtime-tools ros-melodic-resource-retriever ros-melodic-robot ros-melodic-robot-state-publisher
+    ros-melodic-ros ros-melodic-ros-base ros-melodic-ros-comm ros-melodic-ros-core ros-melodic-ros-environment ros-melodic-ros-tutorials
+    ros-melodic-rosbag ros-melodic-rosbag-migration-rule ros-melodic-rosbag-storage ros-melodic-rosbash ros-melodic-rosboost-cfg
+    ros-melodic-rosbuild ros-melodic-rosclean ros-melodic-rosconsole ros-melodic-rosconsole-bridge ros-melodic-roscpp ros-melodic-roscpp-core
+    ros-melodic-roscpp-serialization ros-melodic-roscpp-traits ros-melodic-roscpp-tutorials ros-melodic-roscreate ros-melodic-rosgraph
+    ros-melodic-rosgraph-msgs ros-melodic-roslang ros-melodic-roslaunch ros-melodic-roslib ros-melodic-roslint ros-melodic-roslisp
+    ros-melodic-roslz4 ros-melodic-rosmake ros-melodic-rosmaster ros-melodic-rosmsg ros-melodic-rosnode ros-melodic-rosout ros-melodic-rospack
+    ros-melodic-rosparam ros-melodic-rospy ros-melodic-rospy-tutorials ros-melodic-rosservice ros-melodic-rostest ros-melodic-rostime
+    ros-melodic-rostopic ros-melodic-rosunit ros-melodic-roswtf ros-melodic-rqt-action ros-melodic-rqt-bag ros-melodic-rqt-bag-plugins
+    ros-melodic-rqt-common-plugins ros-melodic-rqt-console ros-melodic-rqt-dep ros-melodic-rqt-graph ros-melodic-rqt-gui ros-melodic-rqt-gui-cpp
+    ros-melodic-rqt-gui-py ros-melodic-rqt-image-view ros-melodic-rqt-launch ros-melodic-rqt-logger-level ros-melodic-rqt-moveit
+    ros-melodic-rqt-msg ros-melodic-rqt-nav-view ros-melodic-rqt-plot ros-melodic-rqt-pose-view ros-melodic-rqt-publisher
+    ros-melodic-rqt-py-common ros-melodic-rqt-py-console ros-melodic-rqt-reconfigure ros-melodic-rqt-robot-dashboard ros-melodic-rqt-robot-monitor
+    ros-melodic-rqt-robot-plugins ros-melodic-rqt-robot-steering ros-melodic-rqt-runtime-monitor ros-melodic-rqt-rviz
+    ros-melodic-rqt-service-caller ros-melodic-rqt-shell ros-melodic-rqt-srv ros-melodic-rqt-tf-tree ros-melodic-rqt-top ros-melodic-rqt-topic
+    ros-melodic-rqt-web ros-melodic-rviz ros-melodic-rviz-plugin-tutorials ros-melodic-rviz-python-tutorial ros-melodic-self-test
+    ros-melodic-sensor-msgs ros-melodic-shape-msgs ros-melodic-simulators ros-melodic-smach ros-melodic-smach-msgs ros-melodic-smach-ros
+    ros-melodic-smclib ros-melodic-stage ros-melodic-stage-ros ros-melodic-std-msgs ros-melodic-std-srvs ros-melodic-stereo-image-proc
+    ros-melodic-stereo-msgs ros-melodic-tf ros-melodic-tf-conversions ros-melodic-tf2 ros-melodic-tf2-eigen ros-melodic-tf2-geometry-msgs
+    ros-melodic-tf2-kdl ros-melodic-tf2-msgs ros-melodic-tf2-py ros-melodic-tf2-ros ros-melodic-theora-image-transport ros-melodic-topic-tools
+    ros-melodic-trajectory-msgs ros-melodic-transmission-interface ros-melodic-turtle-actionlib ros-melodic-turtle-tf ros-melodic-turtle-tf2
+    ros-melodic-turtlesim ros-melodic-urdf ros-melodic-urdf-parser-plugin ros-melodic-urdf-sim-tutorial ros-melodic-urdf-tutorial
+    ros-melodic-urdfdom-py ros-melodic-vision-opencv ros-melodic-visualization-marker-tutorials ros-melodic-visualization-msgs
+    ros-melodic-visualization-tutorials ros-melodic-viz ros-melodic-webkit-dependency ros-melodic-xacro ros-melodic-xmlrpcpp ruby
+    ruby-did-you-mean ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby2.5 rubygems-integration sbcl sdformat-sdf sgml-base
+    sip-dev tango-icon-theme tcl tcl-dev tcl-vtk6 tcl8.6 tcl8.6-dev tk tk-dev tk8.6 tk8.6-blt2.5 tk8.6-dev ttf-bitstream-vera ttf-dejavu-core
+    unixodbc-dev uuid-dev vtk6 x11proto-scrnsaver-dev xml-core
+    0 upgraded, 839 newly installed, 0 to remove and 16 not upgraded.
+
+2.  $ sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+
+    The following NEW packages will be installed:
+    bzr mercurial mercurial-common python-bzrlib python-configobj python-httplib2 python-keyring python-keyrings.alt python-launchpadlib
+    python-lazr.restfulclient python-lazr.uri python-oauth python-rosinstall python-rosinstall-generator python-secretstorage python-simplejson
+    python-vcstools python-wadllib python-wstool subversion
+    0 upgraded, 20 newly installed, 0 to remove and 16 not upgraded.
+    
+3.  $ sudo apt-get install ros-melodic-moveit
+
+    The following NEW packages will be installed:
+    libfcl-dev libfcl0.5 libglew-dev libglew2.0 liboctomap-dev liboctomap1.8 python-pyassimp ros-melodic-chomp-motion-planner
+    ros-melodic-eigen-stl-containers ros-melodic-geometric-shapes ros-melodic-moveit ros-melodic-moveit-commander ros-melodic-moveit-core
+    ros-melodic-moveit-experimental ros-melodic-moveit-fake-controller-manager ros-melodic-moveit-kinematics ros-melodic-moveit-msgs
+    ros-melodic-moveit-planners ros-melodic-moveit-planners-chomp ros-melodic-moveit-planners-ompl ros-melodic-moveit-plugins
+    ros-melodic-moveit-ros ros-melodic-moveit-ros-benchmarks ros-melodic-moveit-ros-control-interface ros-melodic-moveit-ros-manipulation
+    ros-melodic-moveit-ros-move-group ros-melodic-moveit-ros-perception ros-melodic-moveit-ros-planning ros-melodic-moveit-ros-planning-interface
+    ros-melodic-moveit-ros-robot-interaction ros-melodic-moveit-ros-visualization ros-melodic-moveit-ros-warehouse
+    ros-melodic-moveit-setup-assistant ros-melodic-moveit-simple-controller-manager ros-melodic-object-recognition-msgs ros-melodic-octomap
+    ros-melodic-octomap-msgs ros-melodic-ompl ros-melodic-random-numbers ros-melodic-srdfdom ros-melodic-warehouse-ros
+    0 upgraded, 41 newly installed, 0 to remove and 16 not upgraded.
+
+
+

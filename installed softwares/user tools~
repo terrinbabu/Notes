@@ -1,0 +1,26 @@
+1. network tools
+    $ sudo apt install net-tools
+
+2. bluefish text editor
+
+    $ sudo add-apt-repository ppa:klaus-vormweg/bluefish
+    $ sudo apt-get update
+    $ sudo apt-get install bluefish
+
+    The following NEW packages will be installed:
+       bluefish bluefish-data bluefish-plugins libgucharmap-2-90-7
+
+3. freecad
+	
+	$ sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
+	$ sudo apt-get update
+	$ sudo apt-get install freecad
+	
+	The following NEW packages will be installed:
+	  calculix-ccx freecad freecad-doc gconf-service gconf-service-backend gconf2 gconf2-common libclang1-6.0 libcoin80c libgconf-2-4 libmedc1v5
+	  libocct-data-exchange-7.3 libocct-foundation-7.3 libocct-modeling-algorithms-7.3 libocct-modeling-data-7.3 libocct-ocaf-7.3
+	  libocct-visualization-7.3 libpyside2-5.11 libqt5xmlpatterns5 libshiboken2-5.11 libsoqt520 libspooles2.2 libzipios++0v5 python-pivy
+	  python-pyside2.qtcore python-pyside2.qtgui python-pyside2.qtopengl python-pyside2.qtsvg python-pyside2.qtwidgets python-pyside2uic shiboken2
+	0 upgraded, 31 newly installed, 0 to remove and 150 not upgraded.
+
+

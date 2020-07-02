@@ -1,0 +1,58 @@
+1. Universal robot ros industrial
+
+    $ git clone https://github.com/ros-industrial/universal_robot.git
+    $ git clone https://github.com/ros-industrial/ur_modern_driver.git
+    $ git clone https://bitbucket.org/CNR-ITIA/itia_ros_control/src/master/
+    $ git clone https://bitbucket.org/iras-ind/universal_robot_hardware_interface/src/master/
+    $ git clone https://bitbucket.org/CNR-ITIA/itia_ros_controllers/src/master/
+    $ git clone https://bitbucket.org/iras-ind/subscription_notifier/src/master/
+    $ git clone https://bitbucket.org/CNR-ITIA/itia_motion/src/master/
+    $ git clone https://bitbucket.org/iras-ind/thor_controllers/src/master/
+    $ git clone https://bitbucket.org/iras-ind/thor_core/src/master/
+    $ git clone https://bitbucket.org/CNR-ITIA/cnr_robot_visual_tools/src/master/
+	 
+2. RosDyn - downloaded from github RosDyn-Master
+	
+	$ git clone https://github.com/CNR-STIIMA-IRAS/rosdyn.git
+	$ git clone https://github.com/CNR-STIIMA-IRAS/moveit_planning_helper.git
+	$ git clone https://github.com/CNR-STIIMA-IRAS/eigen_utils.git
+	$ git clone https://github.com/CNR-STIIMA-IRAS/rosparam_utilities.git
+	$ git clone https://github.com/PickNikRobotics/rviz_visual_tools.git
+	
+	$ git clone https://github.com/ros-planning/moveit_visual_tools.git
+	
+	- edit to avoid catkin_make error :
+	In file imarker_end_effector.cpp & imarker_robot_state.cpp
+	 	- remove constraint_fn from the function call 
+	 	
+	 	ie:	 	//    if (!imarker_state_->setFromIK(group, poses, tips, timeout, constraint_fn))
+    						if (!imarker_state_->setFromIK(group, poses, tips, timeout)) 	
+    
+	$ git clone https://github.com/davetcoleman/graph_msgs.git
+	$ git clone https://github.com/CNR-STIIMA-IRAS/eigen_control_toolbox.git
+	$ git clone https://github.com/CNR-STIIMA-IRAS/rosdyn_examples.git
+	$ git clone https://github.com/CNR-STIIMA-IRAS/binary_logger.git
+	$ git clone https://github.com/CNR-STIIMA-IRAS/name_sorting.git
+
+3. IK solver - better ik solver
+
+    $ sudo apt install ros-melodic-trac-ik
+    
+    The following additional packages will be installed:
+        libnlopt-dev libnlopt0 ros-melodic-trac-ik-examples ros-melodic-trac-ik-kinematics-plugin ros-melodic-trac-ik-lib ros-melodic-trac-ik-python swig swig3.0
+    
+    (OR)
+    
+    $ git clone https://bitbucket.org/traclabs/trac_ik.git    
+
+4. robotiq
+    
+    $ git clone https://github.com/ros-industrial/robotiq.git
+    
+    -   delete all the packages except robotiq_ft_sensor
+    
+    /dev$ sudo chown terrin ttyUSB0 - to activate USB to access
+    
+    $ rosrun robotiq_ft_sensor rq_sensor
+    
+    $ rosservice call /robotiq_ft_sensor_acc "command_id:8 " 

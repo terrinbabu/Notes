@@ -1,0 +1,4 @@
+1. convert xacro <--> urdf
+
+	$ rosrun xacro xacro --inorder -o ur10_robot.urdf ur10_robot.urdf.xacro
+	

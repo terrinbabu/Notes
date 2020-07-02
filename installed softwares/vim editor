@@ -1,0 +1,68 @@
+	
+	esc 							normal mode
+	v 							visual mode 
+
+In Normal Mode
+
+	h,j,k,l							navigating
+	gk, gj							move up and down using visual lines 
+	w 				 			move ahead to start of the next word
+	e							move ahead to end of the next word
+	b							move backward to start of previous word
+	E, B, W							move in a better way
+	ft							move forward to the next character t (can be any character instead of t)
+	Ft							move backward to the previous character t (can be any character instead of t)
+	0 				 			start of the line
+	$ 				 			end of the line
+	gg 			 				top of the document
+	G		 					end of the document
+	31G	 						31st line of the document (can be any number instead of 31)
+	%							go to the parentheses
+	ctrl + o						takes you back from where the cursor came
+	ctrl + i						takes you forward from where the cursor have been
+			
+	/terrin							search the word terrin and move to the first word
+	enter + n						next instance of the word terrin
+	enter + N						previous instance of the word terrin
+	:%s/terrin/pulikottil/g					replace terrin with pulikottil in whole document
+	:%s/terrin/pulikottil/gc				replace terrin with pulikottil in whole document but ask yes(y) or no(n) before doing it
+	:3,9s/terrin/pulikottil/g				replace terrin with pulikottil in line 3 - 9
+
+	
+	
+	u							undo
+	ctrl+r							redo 
+	x							delete a character
+	dw 			 				delete a word
+	dd							delete a line
+	d$	, D						delete from the cursor to the end of the line
+	yw							yank (copy) a word
+	yy							yank (copy) a line
+	y$							yank (copy) from the cursor to the end of the line
+	p							put the deleted character/word/line
+	ri							replace with character i (can be any character instead of i)
+	
+	i 				 						     enter insert mode
+	I							go to a word 		 and enter insert mode
+	o							insert a line 		 and enter insert mode 
+	O 							insert a previous line 	 and enter insert mode  
+	s							delete the word 	 and enter insert mode
+	S							delete the line 	 and enter insert mode
+        ce							change - delete the word and enter insert mode
+        c$ , C							change - delete the line and enter insert mode
+        A							append the line          and enter insert mode
+        a							append the character 	 and enter insert mode
+   
+	Insert or delete multiple items
+		
+	2w 			 				move ahead two word (can be any number instead of 2)
+	3x							delete 3 character (can be any number instead of 3)
+	3dw 			 				delete 3 words
+			etc
+						
+	:w 			 				save a file
+	:wq 							save and exit
+	:q, :x, shift+zz   					quit
+	:q!  							quit without saving 
+	:!ls							run the command ls and press enter to enter back to vim (can be any command instead of ls)
+	:ctrl+d							give the list of commands that can be performed2ùà

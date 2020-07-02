@@ -1,0 +1,28 @@
+1. Install opencv
+
+$ sudo apt-get update
+$ sudo apt-get install python3-nump
+$ sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libdc1394-22-dev libeigen3-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev sphinx-common libtbb-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libopenexr-dev libgstreamer-plugins-base1.0-dev libavutil-dev libavfilter-dev libavresample-dev
+
+The following NEW packages will be installed:
+  libfaac-dev libfaac0 libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev libopencore-amrnb-dev libopencore-amrwb-dev liborc-0.4-dev
+  liborc-0.4-dev-bin libvorbis-dev libx264-dev libxvidcore-dev python-alabaster python-babel python-babel-localedata python-certifi
+  python-imagesize python-jinja2 python-markupsafe python-requests python-sphinx python-typing python-urllib3 sphinx-common yasm
+The following packages will be upgraded:
+  gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 libgstreamer-gl1.0-0 libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libpng-dev libpng-tools
+  libpng16-16
+
+$ cd /softwares/
+$ git clone https://github.com/Itseez/opencv.git
+$ git clone https://github.com/Itseez/opencv_contrib.git
+$ cd opencv
+$ mkdir release
+$ cd release
+$ cmake -D BUILD_TIFF=ON -D WITH_CUDA=OFF -D ENABLE_AVX=OFF -D WITH_OPENGL=OFF -D WITH_OPENCL=OFF -D WITH_IPP=OFF -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_EIGEN=OFF -D WITH_V4L=OFF -D WITH_VTK=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/softwares/opencv_contrib/modules /softwares/opencv/
+$ make -j4
+$ sudo make install
+$ sudo ldconfig
+
+2. Checking
+
+$ pkg-config --modversion opencv

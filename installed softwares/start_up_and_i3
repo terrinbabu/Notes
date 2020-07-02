@@ -1,0 +1,280 @@
+Software installed
+
+1. google chrome - from manufacturer
+
+2. terminator
+
+	$ sudo apt-get install terminator
+
+	The following NEW packages will be installed:
+
+	  gir1.2-keybinder-3.0 libkeybinder-3.0-0 libpython-stdlib python python-cairo python-dbus python-gi python-gi-cairo python-minimal python-psutil python2.7
+	  python2.7-minimal terminator
+
+
+3. ppa-purge - to remove PPAs
+
+	$ sudo apt-get install ppa-purge
+	$ sudo ppa-purge ppa:whatever/ppa
+	
+	(or)
+
+	$ sudo add-apt-repository --remove ppa:gnome-terminator
+
+4. fish shell for terminator
+
+	$ sudo apt-get install fish
+
+	The following NEW packages will be installed:
+	  fish fish-common javascript-common libjs-jquery libpcre2-32-0 xsel
+
+	$ chsh -s /usr/bin/fish - to make it defalult or $ chsh -s /usr/bin/bash
+	$ set fish_greeting "" - to remove the intro greetings
+
+	$ sudo vim ~/.config/fish/config.fish 
+	if file type, 
+        source /opt/ros/kinetic/share/rosbash/rosfish
+	
+	$ git clone https://github.com/edc/bass.git
+	$ cd bass
+    $ make install
+    
+    $ mkdir ~/.config/fish/conf.d
+    $ sudo vim ~/.config/fish/conf.d/catkin.autosource.fish
+    if file type, 
+        function catkinSource --on-variable PWD
+            status --is-command-substitution; and return
+            if test -e ".catkin_workspace"
+                bass source devel/setup.bash
+                echo "Configured the folder as a workspace"
+            end
+        end
+	
+5. i3 - desktop theme
+
+	$ sudo apt-get install i3
+
+	The following NEW packages will be installed:
+	dunst i3 i3-wm i3lock i3status libanyevent-i3-perl libanyevent-perl libasync-interrupt-perl libcommon-sense-perl libconfuse-common libconfuse2 
+	libev-perl libev4 libguard-perl libjson-xs-perl libtypes-serialiser-perl libxcb-cursor0 libxcb-xinerama0 libxcb-xrm0 libxdg-basedir1 suckless-tools
+
+6. install kdevelop
+
+	$ sudo apt-get install kdevelop
+
+	The following NEW packages will be installed:
+	
+	  g++ g++-7 gcc gcc-7 kaccounts-providers kactivities-bin kactivitymanagerd kapptemplate kde-cli-tools kde-cli-tools-data kdeconnect
+	  kdevelop kdevelop-data kdevelop52-libs kinit kio kio-extras kio-extras-data kpackagelauncherqml kpackagetool5 ktexteditor-data
+	  ktexteditor-katepart kwayland-data kwayland-integration libaccounts-glib0 libaccounts-qt5-1 libapr1 libaprutil1 libaribb24-0 libasan4
+	  libatomic1 libbasicusageenvironment1 libc-ares2 libc-dev-bin libc6-dev libcddb2 libcilkrts5 libclang1-6.0 libdbusmenu-qt5-2 libdc1394-22
+	  libdca0 libdouble-conversion1 libdrm-dev libdvbpsi10 libebml4v5 libeditorconfig0 libegl1-mesa-dev libfaad2 libfakekey0 libfam0
+	  libgcc-7-dev libgif7 libgit2-26 libgl1-mesa-dev libgles1 libgles2-mesa-dev libglu1-mesa-dev libglvnd-core-dev libglvnd-dev
+	  libgrantlee-templates5 libgroupsock8 libhfstospell9 libhttp-parser2.7.1 libitm1 libjs-underscore libkaccounts1 libkasten3controllers3
+	  libkasten3core3 libkasten3gui3 libkasten3okteta1controllers1 libkasten3okteta1core1 libkasten3okteta1gui1 libkate1 libkf5activities5
+	  libkf5archive5 libkf5attica5 libkf5auth-data libkf5auth5 libkf5bookmarks-data libkf5bookmarks5 libkf5calendarevents5 libkf5codecs-data
+	  libkf5codecs5 libkf5completion-data libkf5completion5 libkf5config-bin libkf5config-bin-dev libkf5config-data libkf5config-dev
+	  libkf5configcore5 libkf5configgui5 libkf5configwidgets-data libkf5configwidgets5 libkf5coreaddons-data libkf5coreaddons-dev
+	  libkf5coreaddons-dev-bin libkf5coreaddons5 libkf5crash5 libkf5dbusaddons-bin libkf5dbusaddons-data libkf5dbusaddons-dev libkf5dbusaddons5
+	  libkf5declarative-data libkf5declarative5 libkf5dnssd-data libkf5dnssd5 libkf5doctools5 libkf5globalaccel-bin libkf5globalaccel-data
+	  libkf5globalaccel5 libkf5globalaccelprivate5 libkf5guiaddons5 libkf5i18n-data libkf5i18n-dev libkf5i18n5 libkf5iconthemes-bin
+	  libkf5iconthemes-data libkf5iconthemes5 libkf5idletime5 libkf5itemmodels5 libkf5itemviews-data libkf5itemviews5 libkf5jobwidgets-data
+	  libkf5jobwidgets5 libkf5js5 libkf5kcmutils-data libkf5kcmutils5 libkf5khtml-bin libkf5khtml-data libkf5khtml5 libkf5kiocore5
+	  libkf5kiofilewidgets5 libkf5kiontlm5 libkf5kiowidgets5 libkf5kirigami2-5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+	  libkf5notifications-data libkf5notifications5 libkf5notifyconfig-data libkf5notifyconfig5 libkf5package-data libkf5package-dev
+	  libkf5package5 libkf5parts-data libkf5parts-plugins libkf5parts5 libkf5plasma-dev libkf5plasma5 libkf5plasmaquick5 libkf5pty-data
+	  libkf5pty5 libkf5purpose-bin libkf5purpose5 libkf5quickaddons5 libkf5service-bin libkf5service-data libkf5service-dev libkf5service5
+	  libkf5solid5 libkf5solid5-data libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5su-bin libkf5su-data libkf5su5
+	  libkf5syntaxhighlighting-data libkf5syntaxhighlighting5 libkf5sysguard-data libkf5texteditor5 libkf5texteditor5-libjs-underscore
+	  libkf5textwidgets-data libkf5textwidgets5 libkf5threadweaver5 libkf5wallet-bin libkf5wallet-data libkf5wallet5 libkf5waylandclient5
+	  libkf5widgetsaddons-data libkf5widgetsaddons5 libkf5windowsystem-data libkf5windowsystem-dev libkf5windowsystem5 libkf5xmlgui-bin
+	  libkf5xmlgui-data libkf5xmlgui5 libkomparediff-data libkomparediff2-5 libkwalletbackend5-5 liblivemedia62 liblsan0 liblua5.2-0 libmad0
+	  libmatroska6v5 libmicrodns0 libminizip1 libmpcdec6 libmpx2 libnfs11 libokteta-data libokteta2core2 libokteta2gui2 libopengl0
+	  libopenmpt-modplug1 libphonon4qt5-4 libplacebo4 libpolkit-qt5-1-1 libprocesscore7 libprocessui7 libprotobuf-lite10 libproxy-tools
+	  libpthread-stubs0-dev libqca-qt5-2 libqca-qt5-2-plugins libqt5concurrent5 libqt5core5a libqt5dbus5 libqt5gui5 libqt5help5 libqt5network5
+	  libqt5opengl5 libqt5opengl5-dev libqt5positioning5 libqt5printsupport5 libqt5qml5 libqt5quick5 libqt5quickcontrols2-5
+	  libqt5quicktemplates2-5 libqt5quickwidgets5 libqt5script5 libqt5scripttools5 libqt5sensors5 libqt5sql5 libqt5sql5-sqlite libqt5svg5
+	  libqt5test5 libqt5texttospeech5 libqt5waylandclient5 libqt5waylandcompositor5 libqt5webchannel5 libqt5webengine-data libqt5webenginecore5
+	  libqt5webenginewidgets5 libqt5webkit5 libqt5widgets5 libqt5x11extras5 libqt5xml5 libquadmath0 libre2-4 libresid-builder0c2a
+	  libsdl-image1.2 libsdl1.2debian libserf-1-1 libsidplay2 libsignon-plugins-common1 libsignon-qt5-1 libsndio6.1 libssh2-1 libstdc++-7-dev
+	  libsvn1 libtsan0 libubsan0 libupnp6 libusageenvironment3 libuv1 libvlc-bin libvlc5 libvlccore9 libvoikko1 libvulkan1 libwayland-bin
+	  libwayland-dev libx11-dev libx11-doc libx11-xcb-dev libxau-dev libxcb-composite0 libxcb-damage0 libxcb-dri2-0-dev libxcb-dri3-dev
+	  libxcb-glx0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-shape0-dev libxcb-sync-dev libxcb-xfixes0-dev libxcb1-dev
+	  libxdamage-dev libxdmcp-dev libxext-dev libxfixes-dev libxshmfence-dev libxxf86vm-dev linux-libc-dev make manpages-dev mesa-common-dev
+	  nodejs nodejs-doc phonon4qt5 phonon4qt5-backend-vlc plasma-framework qml-module-org-kde-kconfig qml-module-org-kde-kirigami2
+	  qml-module-org-kde-kquickcontrols qml-module-org-kde-kquickcontrolsaddons qml-module-org-kde-newstuff qml-module-org-kde-purpose
+	  qml-module-qtgraphicaleffects qml-module-qtqml-models2 qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qtquick-dialogs
+	  qml-module-qtquick-layouts qml-module-qtquick-privatewidgets qml-module-qtquick-templates2 qml-module-qtquick-window2 qml-module-qtquick2
+	  qml-module-ubuntu-onlineaccounts qt5-gtk-platformtheme qt5-qmake qt5-qmake-bin qtbase5-dev qtbase5-dev-tools qtchooser
+	  qtdeclarative5-qtquick2-plugin qtscript5-dev qttranslations5-l10n qtwayland5 signon-plugin-oauth2 sonnet-plugins sshfs vlc-data
+	  vlc-plugin-base vlc-plugin-video-output x11proto-core-dev x11proto-damage-dev x11proto-dev x11proto-fixes-dev x11proto-xext-dev
+	  x11proto-xf86vidmode-dev xorg-sgml-doctools xtrans-dev
+	  
+      0 upgraded, 346 newly installed, 0 to remove and 0 not upgraded.
+      
+      $ sudo apt-get install libclang-common-5.0-dev - bug fix for highlighting
+      
+      The following NEW packages will be installed:
+        lib32gcc1 lib32stdc++6 libc6-i386 libclang-common-5.0-dev libllvm5.0
+
+7. vim text editor
+
+    $ sudo apt-get install vim
+    
+    The following NEW packages will be installed:
+        vim vim-runtime
+    
+    # insert text       - i
+    # stop insert       - esc
+    # save and exit     - :wq + enter
+    # exit without save - :q! + enter
+    
+8. feh - for wallpaper
+
+    $ sudo apt-get install feh
+    
+    The following NEW packages will be installed:
+        feh libcurl4 libid3tag0 libimlib2 libjpeg-progs libjpeg9 yudit-common
+    
+    $ feh --bg-scale /../wallpaper.jpg
+
+9. lxappearance - to change the gtk fonts
+
+    $sudo apt-get install lxappearance
+
+    The following NEW packages will be installed:
+        gtk2-engines lxappearance lxde-settings-daemon
+
+10. arc gtk theme 
+
+    required packages
+    
+    $sudo apt-get install autoconf
+    
+    The following NEW packages will be installed:
+        autoconf automake autotools-dev libsigsegv2 m4
+        
+    $sudo apt-get install libgtk-3-dev
+    
+    The following NEW packages will be installed:
+        autopoint build-essential debhelper dh-autoreconf
+        dh-strip-nondeterminism dpkg-dev fakeroot gir1.2-harfbuzz-0.0
+        icu-devtools libalgorithm-diff-perl libalgorithm-diff-xs-perl
+        libalgorithm-merge-perl libarchive-cpio-perl libatk-bridge2.0-dev
+        libatk1.0-dev libatspi2.0-dev libcairo-script-interpreter2
+        libcairo2-dev libdbus-1-dev libepoxy-dev libexpat1-dev libfakeroot
+        libfile-stripnondeterminism-perl libfontconfig1-dev libfreetype6-dev
+        libgdk-pixbuf2.0-dev libglib2.0-dev libglib2.0-dev-bin
+        libgraphite2-dev libgtk-3-dev libharfbuzz-dev libharfbuzz-gobject0
+        libice-dev libicu-dev libicu-le-hb-dev libicu-le-hb0 libiculx60
+        libltdl-dev libmail-sendmail-perl libpango1.0-dev libpcre16-3
+        libpcre3-dev libpcre32-3 libpcrecpp0v5 libpixman-1-dev libpng-dev
+        libpng-tools libsm-dev libsys-hostname-long-perl libtool
+        libxcb-shm0-dev libxcomposite-dev libxcursor-dev libxft-dev
+        libxi-dev libxinerama-dev libxkbcommon-dev libxrandr-dev
+        libxrender-dev libxtst-dev pkg-config po-debconf python3-distutils
+        python3-lib2to3 wayland-protocols x11proto-composite-dev
+        x11proto-input-dev x11proto-randr-dev x11proto-record-dev
+        x11proto-xinerama-dev zlib1g-dev
+    0 upgraded, 71 newly installed, 0 to remove and 0 not upgraded.
+
+    $sudo apt-get install git
+    
+    The following NEW packages will be installed:
+        git git-man liberror-perl
+
+    $sudo apt-get install gnome-themes-standard
+    
+11. thunar - file manager
+
+    $sudo apt-get install thunar
+    
+    The following NEW packages will be installed:
+        exo-utils libexo-1-0 libexo-2-0 libexo-common libexo-helpers
+        libgarcon-1-0 libgarcon-common libthunarx-2-0 libtumbler-1-0
+        libwnck-common libwnck22 libxfce4ui-1-0 libxfce4ui-2-0
+        libxfce4ui-common libxfce4util-bin libxfce4util-common libxfce4util7
+        libxfconf-0-2 thunar thunar-data thunar-volman tumbler
+        tumbler-common xfce4-panel xfconf
+    0 upgraded, 25 newly installed, 0 to remove and 0 not upgraded.
+    
+12. icon themes
+
+    $ sudo apt-get install gnome-icon-theme [*-all themes]
+    
+    $ sudo add-apt-repository -u ppa:snwh/ppa
+    $ sudo apt-get install moka-icon-theme faba-icon-theme faba-mono-icons
+    
+    $ lxappearance - select font type
+    
+13. rofi - instead of dmenu 
+    
+    $ sudo apt-get install rofi
+    
+    The following NEW packages will be installed:
+        libxcb-ewmh2 rofi
+
+14. transparent window
+    
+    $ sudo apt-get install compton
+    
+    The following NEW packages will be installed:
+        compton libconfig9
+
+15. iblocks - for editing i3 bar
+
+    $ sudo apt-get install i3blocks
+    
+    The following NEW packages will be installed:
+        acpi gawk i3blocks sysstat
+
+16. py3status - for editing i3 bar
+    
+    $sudo apt-get install py3status
+
+16. pavucontrol - audio control
+
+    $ sudo apt-get install pavucontrol
+    The following NEW packages will be installed:
+        libatkmm-1.6-1v5 libcairomm-1.0-1v5 libglibmm-2.4-1v5
+        libgtkmm-3.0-1v5 libpangomm-1.4-1v5 libsigc++-2.0-0v5 pavucontrol
+
+17. pnmixer - volume control
+    
+    $ sudo apt-get install pnmixer
+    
+18. light - light control
+
+    $ git clone https://github.com/haikarainen/light
+    $ cd light
+    $ ./autogen.sh
+    $ ./configure
+    $ make
+    $ sudo make install
+
+19. disable power button
+
+    $ vim /etc/systemd/logind.conf 
+    uncomment #HandlePowerKey=poweroff
+    change to HandlePowerKey=ignore
+    
+20. blueman - bluetooth settings
+
+    $ sudo apt-get install blueman
+    The following NEW packages will be installed:
+        blueman gir1.2-appindicator3-0.1
+
+21. unity control center - control manager
+
+    $ sudo apt install unity-control-center
+    The following NEW packages will be installed:
+        activity-log-manager geoclue geoclue-ubuntu-geoip indicator-applet indicator-application indicator-bluetooth indicator-common
+        indicator-datetime indicator-keyboard indicator-messages indicator-power indicator-sound libfcitx-config4 libfcitx-gclient1 libfcitx-utils0
+        libgeoclue0 libgeonames-common libgeonames0 libido3-0.1-0 liblightdm-gobject-1-0 libnm-glib4 libnm-gtk0 libnm-util2 libpanel-applet3
+        libtimezonemap-data libtimezonemap1 libunity-control-center1 libunity-settings-daemon1 liburl-dispatcher1 policykit-1-gnome
+        ubuntu-touch-sounds unity-control-center unity-settings-daemon
+        0 upgraded, 33 newly installed, 0 to remove and 20 not upgraded.
+
+22. xcompmgr - terminal trasparency
+	
+	$ sudo apt-get install xcompmgr
