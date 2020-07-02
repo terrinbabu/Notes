@@ -1,0 +1,14 @@
+﻿FORMAT DISK 
+
+
+- cmd - open command prompt in search
+- Right-click on it and choose "Run as administrator"
+
+
+> diskpart // enter diskpart mode
+> list disk
+> select disk 2
+> clean
+> create partition primary
+> format fs=ntfs // or If you prefer other file system formats, change the command ntfs to the desired one such as fat32, exfat, etc
+> assign
